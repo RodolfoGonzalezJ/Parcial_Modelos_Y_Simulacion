@@ -3,14 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIMULACION DE SUELDOS VINCULaCION DE DOCENTES</title>
+    <title>SIMULADOR DE SUELDO DE VINCULACION DE DOCENTES</title>
+    <!--<script src="main.js"></script>-->
+    
 </head>
 <body>
     <form action="">
-        <h2>1. TITULOS DE ESTUDIOS UNIVERSITARIOS</h2>
-        <h2>2. CATEGORIAS DENTRO DEL ESCALAFON DOCENTE</h2>
-        <h2>3. EXPERIENCIA CALIFICADA</h2>
-        <h2>4. PRODUCTIVIDAD ACADEMICA</h2>
-    </form> 
+        <h1>SIMULADOR DE SUELDO DE VINCULACION DE DOCENTES</h1>
+        <br>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <b>1. TITULOS DE ESTUDIOS UNIVERSITARIOS</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="letra_12" colspan="4">- Por títulos de pregrado: 
+                        Sólo si se ha obtenido el diploma. (<a onclick="ayuda('pagina12')" class="mano_link">Numeral 
+                        1, Artículo 7 Dc. 1279</a>)<br>
+                        <br>
+                        <input type="radio" name="area_titulo" value="183" onclick="habilitacion(1,2)" id="area_titulo">
+                        En Medicina Humana o composición Musical <br>
+                        <br>
+                        <input type="radio" name="area_titulo" value="178" onclick="habilitacion(2,1)" id="area_titulo">
+                        En otra área <br>
+                        <br>
+                        <br>
+                        - Por títulos de Posgrado. (<a href="posgrado.html" target="_blank">Numeral 
+                        2, Artículo 7 Dc. 1279</a>)</td>
+                </tr>
+                <tr>
+                    <td class="letra_12" width="47%" height="77"><i><br>
+                        Especializaciones (incluye subespecializaciones clínicas   
+                        o médicas)<br>
+                        <br>
+                        </i>&gt;&gt; Clínicas en Medicina Humana y Odontología<br>
+                      </td>
+                      <td class="letra_12" height="77" colspan="2"> 
+                        <div style="text-align: left;"><br>
+                          <br>
+                          <br>
+                          <input type="text" name="ano_espec1" size="5" maxlength="5" class="cajas" id="ano_espec1" >
+                          Años Académicos </div>
+                      </td>
+                </tr>
+                <tr>
+                    <td class="letra_12" width="47%" height="42">&gt;&gt; No Clínicas</td>
+                    <td class="letra_12" height="42" colspan="2"> 
+                        <div style="text-align: left;"> 
+                            <input type="text" name="ano_espec1" size="5" maxlength="5" class="cajas" id="ano_espec1">
+                          Programas cursados</div>
+                      </td>
+                </tr>
+                <tr> 
+                    <td class="letra_12" width="47%" height="42"><i>Magister o Maestrías</i></td>
+                    <td class="letra_12" height="42" colspan="2"> 
+                      <input type="text" name="ano_espec3" size="5" maxlength="5" class="cajas" id="ano_espec3">
+                      Programas cursados</td>
+                </tr>
+                <tr> 
+                    <td class="letra_12" width="47%" height="42"><i>Ph.D. o Doctorado</i></td>
+                    <td class="letra_12" height="42" colspan="2"> 
+                      <input type="text" name="ano_espec4" size="5" maxlength="5" class="cajas" onkeydown="cambiar_ano()" onkeyup="cambiar_ano()" id="ano_espec4">
+                      Programas cursados</td>
+                </tr>
+                <tr> 
+                    <td class="letra_12" width="47%" height="42">&nbsp;</td>
+                    <td class="letra_12" height="42" colspan="2"> 
+                      <input type="checkbox" name="ano_titulo" value="0" disabled="true" id="ano_titulo">
+                      Título de Doctorado obtenido después de 1998 </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table>
+            <tbody>
+                <tr> 
+                    <td class="letra_12" colspan="4" height="17"> 
+                      <p align="justify"><b><a name="escalafon"></a>2. CATEGORIAS DENTRO 
+                        DEL ESCALAFON DOCENTE</b> (<a onclick="ayuda('escalafon')" target="_blank"><span class="mano_link">Artículo 
+                        8 Dc. 1279</span></a>) (<a href="art40_profesor.html" target="_blank">Artículo 
+                        40 Reglamento del Profesor</a>)</p>
+                    </td>
+                </tr>
+                <tr><tr> 
+                    <td class="letra_12" colspan="5" height="25">La categoría de 
+                      ingreso al escalafón docente corresponde a la categoría 
+                      de Auxiliar. Sin embargo, si ha sido docente con vinculación 
+                      a término indefinido (Empleado Público) de Universidad 
+                      pública o privada de reconocido prestigio, a criterio de 
+                      la UIS, seleccione la última categoría allí 
+                      obtenida, pues ésta puede ser homolgada por la UIS. </td>
+                  </tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+            </tbody>
+        </table>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <b>3. EXPERIENCIA CALIFICADA</b>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+            </tbody>
+        </table>
+
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <b>4. PRODUCTIVIDAD ACADEMICA</b>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+            </tbody>
+        </table>
+
+
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+    </form>
 </body>
 </html>
