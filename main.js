@@ -10,13 +10,13 @@ function cambiar_ano() {
   }
 }
 
-function ayuda_nav(ancla) {
-  ventana = window.open(
-    "ayuda.html#" + ancla,
-    "",
-    "width=700,height=375,left=50,top=0,toolbar=0,location=0,directories=0,status=1,menubar=0,scrollbars=1,resizable=0"
-  );
-}
+// function ayuda_nav(ancla) {
+//   ventana = window.open(
+//     "ayuda.html#" + ancla,
+//     "",
+//     "width=700,height=375,left=50,top=0,toolbar=0,location=0,directories=0,status=1,menubar=0,scrollbars=1,resizable=0"
+//   );
+// }
 
 function ayuda(ancla) {
   ventana = window.open(
@@ -314,13 +314,13 @@ function simular() {
     suma_experiencia = parseFloat(maximo_experiencia);
 
   //PRODUCTIVIDAD ACADEMICA ***********************************
-  if (document.getElementsByName("escalafon")[0].checked == true)
-    maximo_productividad = 80;
   if (document.getElementsByName("escalafon")[1].checked == true)
-    maximo_productividad = 160;
+    maximo_productividad = 80;
   if (document.getElementsByName("escalafon")[2].checked == true)
-    maximo_productividad = 320;
+    maximo_productividad = 160;
   if (document.getElementsByName("escalafon")[3].checked == true)
+    maximo_productividad = 320;
+  if (document.getElementsByName("escalafon")[4].checked == true)
     maximo_productividad = 540;
 
   for (numero = 1; numero <= 25; numero++) {
@@ -421,7 +421,7 @@ function habilitacion(h, d) {
 
 function mostrar(tabla,cuantos,numero)
 {	
-	//form1.MostrarTablas.value = "S"; // Se incluye el 13/Jun/2017
+	//form1.MostrarTablas.value = "S"; 
 	
 	for (i=0;i<=numero;i++)
 		eval(tabla+i).style.display="none";
@@ -432,8 +432,6 @@ function mostrar(tabla,cuantos,numero)
 //	alert("MostrarTablas: "+form1.MostrarTablas.value);	
 }
 
-// Se incluye el 13/Jun/2017 (Para funcionamiento en el navegador google Chrome)
-// Funcion para ocultar tablas con sus respectivas cajas de texto 
 function ocultarTablas()
 {
 	var opciones = 30
@@ -449,7 +447,6 @@ function ocultarTablas()
 	}
 }
 
-// Se incluye el 13/Jun/2017 
 function ocultar(tabla,numero)
 {		
 //	alert("tabla: "+tabla);	
