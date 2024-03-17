@@ -419,34 +419,42 @@ function habilitacion(h, d) {
   eval("form1.ano_espec" + d).disabled = true;
 }
 
-function mostrar(tabla, cuantos, numero) {
-  form1.MostrarTablas.value = "S"; // Se incluye el 13/Jun/2017
+function mostrar(tabla,cuantos,numero)
+{	
+	//form1.MostrarTablas.value = "S"; // Se incluye el 13/Jun/2017
+	
+	for (i=0;i<=numero;i++)
+		eval(tabla+i).style.display="none";
 
-  for (i = 0; i <= numero; i++) eval(tabla + i).style.display = "none";
-
-  for (i = 0; i <= cuantos; i++) eval(tabla + i).style.display = "";
-
-  //	alert("MostrarTablas: "+form1.MostrarTablas.value);
+	for (i=0;i<=cuantos;i++)
+		eval(tabla+i).style.display="";
+		
+//	alert("MostrarTablas: "+form1.MostrarTablas.value);	
 }
 
 // Se incluye el 13/Jun/2017 (Para funcionamiento en el navegador google Chrome)
-// Funcion para ocultar tablas con sus respectivas cajas de texto
-function ocultarTablas() {
-  var opciones = 30;
-  //	alert("ocultarTablas");
-  form1.MostrarTablas.value = "N";
-
-  if (form1.MostrarTablas.value != "S") {
-    for (k = 1; k <= 25; k++) {
-      ocultar("tabla_" + k + "_", opciones);
-    }
-  }
+// Funcion para ocultar tablas con sus respectivas cajas de texto 
+function ocultarTablas()
+{
+	var opciones = 30
+//	alert("ocultarTablas");	
+	form1.MostrarTablas.value = "N";
+	
+	if(form1.MostrarTablas.value != "S")
+	{
+		for (k=1; k<=25; k++)
+		{
+			ocultar("tabla_"+k+"_",opciones);
+		}
+	}
 }
 
-// Se incluye el 13/Jun/2017
-function ocultar(tabla, numero) {
-  //	alert("tabla: "+tabla);
-  for (i = 0; i <= numero; i++) {
-    eval(tabla + i).style.display = "none";
-  }
+// Se incluye el 13/Jun/2017 
+function ocultar(tabla,numero)
+{		
+//	alert("tabla: "+tabla);	
+	for (i=0;i<=numero;i++)
+	{
+		eval(tabla+i).style.display="none";
+	}
 }

@@ -50,13 +50,14 @@
 }
 
 .borde_tabla_grueso {
-    border: 4px #5a7392 double;
+    border: 4px #3CB143 double;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px
 }
 
 .borde_tabla_fino {
-    border: 1px #5a7392 solid;
+    border: 1px #3CB143 solid;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px
 }
+
