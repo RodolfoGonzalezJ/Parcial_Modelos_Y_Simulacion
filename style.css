@@ -1,0 +1,62 @@
+.letra_12 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000
+}
+
+.cajas {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+    border: #000000;
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    text-align: center
+}
+
+.boton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #000000;
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    cursor: hand
+}
+
+.caja_invisible {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border-style: none;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    text-align: center;
+    color: #000000
+}
+
+.mano_link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: 5a7392;
+    cursor: hand;
+    text-decoration: underline
+}
+
+.borde_tabla_grueso {
+    border: 4px #5a7392 double;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px
+}
+
+.borde_tabla_fino {
+    border: 1px #5a7392 solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px
+}
