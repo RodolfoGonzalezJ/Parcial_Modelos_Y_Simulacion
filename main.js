@@ -91,7 +91,6 @@ function simular() {
   // Verificar si se seleccionó el área del título
   //if ((form1.area_titulo(0).checked==false) && (form1.area_titulo(1).checked==false))
   if (form1.area_titulo.value == "") {
-    // Se incluye 13/Jun/2017
     alert("Debe seleccionar el área del título");
     form1.ancla.focus();
     return false;
@@ -100,7 +99,6 @@ function simular() {
   //if (form1.area_titulo(0).checked==true) suma_titulos=parseInt(form1.area_titulo(0).value);
   //if (form1.area_titulo(1).checked==true) suma_titulos=parseInt(form1.area_titulo(1).value);
 
-  // Se incluye 13/Jun/2017
   if (eval(form1.area_titulo.value) > 0)
     suma_titulos = parseInt(form1.area_titulo.value);
 
